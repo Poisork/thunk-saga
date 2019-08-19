@@ -1,7 +1,7 @@
 import React from 'react'; 
 import './App.css';
 import {connect} from 'react-redux'
-import {fetchDog} from './redux/dispatch'
+import {fetchDog} from './redux/actions'
 
 function App(props) { 
   return (

@@ -9,3 +9,7 @@ export const requestDog = () => {
   export const requestDogError = () => {
     return { type: 'REQUESTED_DOG_FAILED' }
   };
+
+  export const fetchDog = () => {
+    return { type: 'FETCHED_DOG' }
+  };
