@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
+import React from 'react'; 
 import './App.css';
+import {connect} from 'react-redux'
+import {fetchDog} from './redux/dispatch'
 
-function App() {
+function App(props) { 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div>
+      <button onClick={() => props.dispatch(fetchDog())}>Show Dog</button>
+        {props.loading 
+          ? <p>Loading...</p> 
+          : props.error
+              ? <p>Error, try again</p>
+              : <p><img alt='Dog if you fetch him' style={{width: '500px',height: '500px',objectFit: 'cover', borderRadius: '50%'}} src={props.url}/></p>}
+  </div>
   );
 }
 
-export default App;
+export default connect((state) => {
+  console.log(state);
+  return state;
+})(App);
