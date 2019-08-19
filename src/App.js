@@ -6,7 +6,7 @@ import {fetchDog} from './redux/dispatch'
 function App(props) { 
   return (
     <div>
-      <button onClick={() => props.dispatch(fetchDog())}>Show Dog</button>
+      <button onClick={() => fetchDog(props.dispatch)}>Show Dog</button>
         {props.loading 
           ? <p>Loading...</p> 
           : props.error
