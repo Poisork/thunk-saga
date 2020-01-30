@@ -16,7 +16,7 @@ function* fetchDogAsync() {
             fetch('https://dog.ceo/api/breeds/image/random')
                 .then(res => res.json())
         );
-        yield put(requestDogSuccess(data));
+        const puts = yield put(requestDogSuccess(data));
     } catch (error) {
         yield put(requestDogError());
     }

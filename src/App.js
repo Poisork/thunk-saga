@@ -2,10 +2,11 @@ import React from 'react';
 import './App.css';
 import {connect} from 'react-redux'
 import {fetchDog} from './redux/actions'
-
+import {Star} from './Components/Default'
 function App(props) { 
   return (
     <div>
+      <Star />
       <button onClick={() => props.dispatch(fetchDog())}>Show Dog</button>
         {props.loading 
           ? <p>Loading...</p> 

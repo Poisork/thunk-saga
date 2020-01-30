@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Shallows Render correct properties <App /> 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <Connect(App)>
+    <App
+      dispatch={[Function]}
+      error={false}
+      loading={false}
+      url=""
+    >
+      <div>
+        <Star>
+          <div
+            onClick={[Function]}
+          >
+            star
+          </div>
+        </Star>
+        <button
+          onClick={[Function]}
+        >
+          Show Dog
+        </button>
+        <p>
+          <img
+            alt="Dog if you fetch him"
+            src=""
+            style={
+              Object {
+                "borderRadius": "50%",
+                "height": "500px",
+                "objectFit": "cover",
+                "width": "500px",
+              }
+            }
+          />
+        </p>
+      </div>
+    </App>
+  </Connect(App)>
+</Provider>
+`;
+
+exports[`Shallows Render correct properties <Star /> 1`] = `
+<div
+  onClick={[Function]}
+>
+  star selected
+</div>
+`;
+
+exports[`SnapShots Render correct properties <App /> 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <Connect(App)>
+    <App
+      dispatch={[Function]}
+      error={false}
+      loading={false}
+      url=""
+    >
+      <div>
+        <Star>
+          <div
+            onClick={[Function]}
+          >
+            star
+          </div>
+        </Star>
+        <button
+          onClick={[Function]}
+        >
+          Show Dog
+        </button>
+        <p>
+          <img
+            alt="Dog if you fetch him"
+            src=""
+            style={
+              Object {
+                "borderRadius": "50%",
+                "height": "500px",
+                "objectFit": "cover",
+                "width": "500px",
+              }
+            }
+          />
+        </p>
+      </div>
+    </App>
+  </Connect(App)>
+</Provider>
+`;
+
+exports[`SnapShots Render correct properties <Star /> 1`] = `
+<div
+  onClick={[Function]}
+>
+  star selected
+</div>
+`;

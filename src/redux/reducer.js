@@ -1,4 +1,4 @@
-const initialState = {
+export const initialState = {
     url: '',
     loading: false,
     error: false,
